@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Necklaces, Chokers, Rings">
+  <title>Jewellery-login</title>
+  <link rel="preload" href="fonts/poppins/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+  <div class="overflow" id="overflow"></div>
+  <div class="page__wrapper">
+    <div class="main-menu main-menu--closed main-menu--nojs">
+      <header class="main-header main-header-login">
+        <div class="main-header__content-wrapper">
+          <div class="main-header__inner">
+            <div class="main-header__header-up">
+              <div class="main-header__header-up-inner container login-header-up">
+                <button class="main-menu__toggle none" type="button" id="btnMenuMain">
+                  <span>Открыть меню</span>
+                </button>
+                <form class="none" action="https://echo.htmlacademy.ru/" method="get" name="headerSearch">
+                  <label class="none" for="headerSearch">
+                    <svg role="img" class="search" width="14" height="14" aria-label="search">
+                      <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                  </label>
+                  <input class="none" type="search" name="search" id="headerSearch" placeholder="Type here to search" tabindex="2">
+                </form>
+
+                <div class="logo">
+                  <a class="logo__link" href="index.html">
+                    <svg role="img" class="logo" width="66" height="66" aria-label="logotype">
+                      <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="authorization none">
+                  <div class="login">
+                    <a class="login__link" id="login" tabindex="3">Login</a>
+                  </div>
+
+                  <div class="cart">
+                    <a href="#" class="cart__link" id="cart" tabindex="4">
+                      <span>Cart</span>
+                      <span>0</span>
+                      <svg role="img" class="cart" width="20" height="20" aria-label="cart">
+                        <use xlink:href="img/sprite.svg#card"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="main-menu__list container">
+              <nav class="main-nav">
+                <div class="main-nav__wrapper">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#" tabindex="5" aria-label="What’s new">What’s new</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#" tabindex="6" aria-label="Chokers">Chokers</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#" tabindex="7" aria-label="Necklaces">Necklaces</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#" tabindex="8" aria-label="Rings">Rings</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#" tabindex="9" aria-label="Earrings">Earrings</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <main class="main">
+      <div class="loginPopup loginPopupPage show login-popup" id="loginPopup">
+        <div class="loginPopup__wrapper login-wrapper">
+          <div class="loginPopup__header">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="
+                  img/content/login-header/loginBg.webp    1x,
+                  img/content/login-header/loginBg@2x.webp 2x
+                ">
+              <source type="image/webp" media="(min-width: 320px)" srcset="
+                  img/content/login-header/loginBg-mb.webp    1x,
+                  img/content/login-header/loginBg-mb@2x.webp 2x
+                ">
+              <!-- 1х: 430px; 2x: 860px -->
+              <img src="img/content/login-header/loginBg.jpg" srcset="img/content/login-header/loginBg@2x.jpg 2x" alt="blog care" loading="lazy" width="430" height="138">
+            </picture>
+          </div>
+          <div class="loginPopup__inner">
+            <p>Log in</p>
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <input type="email" name="loginEmail" id="loginEmail" placeholder="Your E-mail" required="" minlength="5" aria-label="Input E-mail">
+              <div class="password-wrapper">
+                <input type="password" name="loginPassword" id="loginPassword" placeholder="Password" required="" minlength="5" aria-label="Input Password">
+                <span>
+                  <a href="#" aria-label="Forgot your password">Forgot your password?</a>
+                </span>
+              </div>
+              <button type="submit" id="loginSubmit" aria-label="Log In">Log In</button>
+            </form>
+            <div class="loginPopup__inner-signUp">
+              <a href="#" id="loginSignUp" aria-label="Sing Up">
+                <span>Don’t have an account?</span>
+                <span>Sign Up</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+  <script src="js/script.min.js" async=""></script>
+</body>
+
+</html>
